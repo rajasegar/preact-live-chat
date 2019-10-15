@@ -1,0 +1,30 @@
+.emojiIconWrapper,
+.sendIconWrapper {
+    background: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.emojiIconWrapper:focus {
+    outline: none;
+}
+
+.emojiIcon {
+    height: 18px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.emojiIcon path, .emojiIcon circle {
+    fill: rgba(86, 88, 103, 0.3);
+}
+
+.emojiIconWrapper:focus .emojiIcon path,
+.emojiIconWrapper:focus .emojiIcon circle,
+.emojiIcon.active path,
+.emojiIcon.active circle,
+.emojiIcon:hover path,
+.emojiIcon:hover circle {
+    fill: rgba(86, 88, 103, 1);
+}
